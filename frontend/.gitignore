@@ -1,0 +1,29 @@
+node_modules
+dist
+build
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# Caches / build output
+.cache
+.vite
+.parcel-cache
+coverage
+
+# Editor/IDE
+.vscode/
+.idea/

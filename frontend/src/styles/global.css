@@ -1,0 +1,55 @@
+/* ============================================================
+   JOHNIX ARTS — Global Design System
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg-primary: #F8F6F2;
+  --bg-secondary: #F1EEE8;
+  --bg-dark: #0F0F0D;
+  --text-primary: #1A1A18;
+  --text-secondary: #4A4A46;
+  --text-muted: #8A8A84;
+  --text-inverse: #F8F6F2;
+  --accent-warm: #C8A96A;
+  --accent-warm-light: #E8D5A3;
+  --accent-border: #E0DDD6;
+  --accent-border-dark: #2E2E2A;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Manrope', -apple-system, sans-serif;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+ul, ol { list-style: none; }
+
+::selection { background: var(--accent-warm-light); color: var(--text-primary); }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: var(--accent-warm); border-radius: 3px; }
+
+:focus-visible { outline: 2px solid var(--accent-warm); outline-offset: 3px; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); border: 0;
+}

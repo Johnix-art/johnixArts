@@ -1,0 +1,52 @@
+.page { padding-top:80px;min-height:100vh; }
+.pageHeader { background:var(--bg-dark);padding:5rem 2.5rem 4rem;padding-top:calc(80px + 3rem); }
+.pageHeaderInner { max-width:760px; }
+.eyebrow { font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-warm);margin-bottom:.875rem; }
+.pageTitle { font-family:var(--font-display);font-size:clamp(3rem,8vw,5.5rem);font-weight:300;letter-spacing:-.02em;color:var(--text-inverse);line-height:1.05;margin:1rem 0 1.25rem; }
+.pageDesc { font-size:1.05rem;line-height:1.75;color:rgba(248,246,242,.5); }
+.controls { border-bottom:1px solid var(--accent-border);background:var(--bg-primary);position:sticky;top:72px;z-index:50; }
+.controlsInner { max-width:1400px;margin:0 auto;padding:.875rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap; }
+.catFilters { display:flex;align-items:center;gap:.25rem;flex-wrap:wrap; }
+.catBtn { display:inline-flex;align-items:center;gap:.4rem;font-family:var(--font-body);font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);background:transparent;border:1px solid transparent;padding:.45rem .875rem;border-radius:100px;transition:all .2s ease;cursor:pointer; }
+.catBtn:hover { color:var(--text-primary);border-color:var(--accent-border); }
+.catActive { color:var(--text-primary)!important;background:var(--bg-secondary);border-color:var(--accent-border)!important; }
+.catCount { font-size:.62rem;color:var(--text-muted); }
+.catActive .catCount { color:var(--accent-warm); }
+.searchWrap { position:relative;display:flex;align-items:center; }
+.searchIcon { position:absolute;left:.875rem;color:var(--text-muted);pointer-events:none; }
+.searchInput { font-family:var(--font-body);font-size:.8125rem;color:var(--text-primary);background:var(--bg-secondary);border:1px solid var(--accent-border);border-radius:100px;padding:.5rem 2.5rem .5rem 2.25rem;width:220px;outline:none;transition:border-color .2s ease,width .3s ease; }
+.searchInput:focus { border-color:var(--text-muted);width:260px; }
+.searchInput::placeholder { color:var(--text-muted); }
+.clearSearch { position:absolute;right:.75rem;color:var(--text-muted);display:flex;align-items:center;transition:color .2s ease; }
+.clearSearch:hover { color:var(--text-primary); }
+.resultsBar { padding:.6rem 0;border-bottom:1px solid var(--accent-border); }
+.resultsBarInner { max-width:1400px;margin:0 auto;padding:0 2.5rem;display:flex;align-items:center;gap:1rem;font-size:.72rem;color:var(--text-muted); }
+.clearFilter { font-size:.7rem;font-weight:500;color:var(--text-secondary);display:inline-flex;align-items:center;gap:.3rem;border-bottom:1px solid var(--accent-border);padding-bottom:1px;background:none;border-top:none;border-left:none;border-right:none;cursor:pointer;transition:color .2s ease; }
+.clearFilter:hover { color:var(--text-primary); }
+.gridWrap { max-width:1400px;margin:0 auto;padding:3rem 2.5rem 5rem; }
+.grid { display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem 1.25rem; }
+.card { display:flex;flex-direction:column; }
+.cardImg { position:relative;overflow:hidden;aspect-ratio:3/4;background:var(--bg-secondary);border-radius:var(--radius-sm);cursor:pointer; }
+.cardImg img { width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.25,.46,.45,.94);pointer-events:none; }
+.card:hover .cardImg img { transform:scale(1.04); }
+.quickView { position:absolute;bottom:.75rem;left:50%;transform:translateX(-50%) translateY(6px);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--bg-dark);background:var(--accent-warm);padding:.4rem .875rem;border-radius:100px;white-space:nowrap;opacity:0;transition:all .25s ease; }
+.card:hover .quickView { opacity:1;transform:translateX(-50%) translateY(0); }
+.cardBody { padding:.875rem 0 0;flex:1;display:flex;flex-direction:column;gap:.3rem; }
+.cardTop { display:flex;align-items:center;justify-content:space-between; }
+.cardCat { font-size:.65rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-warm); }
+.available { font-size:.6rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:100px;background:rgba(72,160,100,.12);color:#3a8a5c; }
+.sold { font-size:.6rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:100px;background:rgba(160,72,72,.1);color:#8a5a5a; }
+.cardTitle { font-family:var(--font-display);font-size:1rem;font-weight:400;font-style:italic;color:var(--text-primary); }
+.cardTitle a { text-decoration:none;color:inherit;transition:color .2s ease; }
+.cardTitle a:hover { color:var(--accent-warm); }
+.cardMedium { font-size:.72rem;color:var(--text-muted); }
+.cardFooter { display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:.5rem;border-top:1px solid var(--accent-border); }
+.cardDims { font-size:.68rem;color:var(--text-muted); }
+.cardDetail { font-size:.68rem;font-weight:600;letter-spacing:.08em;color:var(--text-secondary);text-decoration:none;transition:color .2s ease; }
+.cardDetail:hover { color:var(--accent-warm); }
+.empty { text-align:center;padding:5rem 2rem;display:flex;flex-direction:column;align-items:center;gap:1.5rem; }
+.empty p { font-family:var(--font-display);font-size:1.5rem;font-style:italic;color:var(--text-muted); }
+.empty button { font-size:.78rem;font-weight:500;color:var(--text-secondary);border-bottom:1px solid var(--accent-border);padding-bottom:2px;background:none;border-top:none;border-left:none;border-right:none;cursor:pointer; }
+@media (max-width:1100px) { .grid { grid-template-columns:repeat(3,1fr); } }
+@media (max-width:900px) { .grid { grid-template-columns:repeat(2,1fr); } .controlsInner { flex-direction:column;align-items:flex-start; } }
+@media (max-width:600px) { .gridWrap { padding:2rem 1.25rem 4rem; } .grid { grid-template-columns:repeat(2,1fr);gap:1rem .75rem; } .pageHeader { padding:5rem 1.25rem 3rem; } .controlsInner { padding:.875rem 1.25rem; } .resultsBarInner { padding:0 1.25rem; } .searchInput { width:180px; } .searchInput:focus { width:200px; } }

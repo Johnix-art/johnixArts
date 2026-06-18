@@ -1,0 +1,5 @@
+.base { transition: opacity 0.7s ease, transform 0.7s ease; }
+.up { opacity: 0; transform: translateY(28px); }
+.left { opacity: 0; transform: translateX(-30px); }
+.right { opacity: 0; transform: translateX(30px); }
+.visible { opacity: 1 !important; transform: translateY(0) translateX(0) !important; }
