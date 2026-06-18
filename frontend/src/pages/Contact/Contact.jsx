@@ -38,7 +38,7 @@ export default function Contact() {
           <ScrollReveal>
             <div className={styles.infoBlock}>
               <p className={styles.infoLabel}>Email</p>
-              <a href="mailto:hello@johnixarts.com" className={styles.infoValue}>hello@johnixarts.com</a>
+              <a href="mailto:hello@johnixarts.com" className={styles.infoValue}>johnixarts@gmail.com</a>
             </div>
           </ScrollReveal>
           <ScrollReveal delay={80}>
@@ -74,7 +74,7 @@ export default function Contact() {
             <div className={styles.socials}>
               <a href="mailto:hello@johnixarts.com" className={styles.socialBtn} aria-label="Email"><FiMail size={17} /></a>
               <a href="https://instagram.com/johnixarts" target="_blank" rel="noopener noreferrer" className={styles.socialBtn} aria-label="Instagram"><FiInstagram size={17} /></a>
-              <a href="https://wa.me/234000000000" target="_blank" rel="noopener noreferrer" className={styles.socialBtn} aria-label="WhatsApp"><FaWhatsapp size={17} /></a>
+              <a href="https://wa.me/2348149548286" target="_blank" rel="noopener noreferrer" className={styles.socialBtn} aria-label="WhatsApp"><FaWhatsapp size={17} /></a>
             </div>
           </ScrollReveal>
         </div>
